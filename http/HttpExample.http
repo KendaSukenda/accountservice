@@ -1,0 +1,30 @@
+DELETE http://localhost:8000/account/01
+Accept: application/json
+
+###
+GET http://localhost:8000/account/02
+Accept: application/json
+
+###
+GET http://localhost:8000/account/getAll
+Accept: application/json
+
+###
+POST http://localhost:8000/account
+Content-Type: application/json
+
+{
+  "customerId": "04",
+  "phone": "087998979",
+  "email": "soekenda09@gmail.com"
+}
+
+###
+POST http://localhost:8000/account/update
+Content-Type: application/json
+
+{
+  "customerId": "03",
+  "phone": "08767600001",
+  "email": "Kenda@gmail.com"
+}
